@@ -1,0 +1,116 @@
+/* public/css/style.css */
+
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,121,112,1) 0%, rgba(0,212,255,1) 100%);
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    border-radius: 10px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.form-area {
+    width: 50%;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+.submit-btn {
+    margin-top: 20px;
+    background: #007bff;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn:hover {
+    background: #00FFFF;
+    box-shadow: 0 6px 20px rgba(0, 212, 255, 0.5);
+    color: #333;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #00FFFF;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    color: #007bff;
+}
+
+.visual-area {
+    margin-bottom: auto;
+    display: flex;
+    justify-content: space-between; /* Adjust the spacing between the images */
+    flex-wrap: wrap; /* If you want images to wrap when the screen is smaller */
+}
+
+.visual-area img {
+    max-width: 20%; /* Adjust the percentage based on how many images you want per row */
+    height: 100px; /* Maintain aspect ratio */
+    margin: 10px; /* Adds space around images */
+}
+
